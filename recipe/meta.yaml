@@ -34,7 +34,7 @@ test:
     - sksparse
     - sksparse.cholmod
   commands:
-    - nosetests -sv sksparse
+    - OPENBLAS_NUM_THREADS=1 nosetests -sv sksparse
 
 about:
   home: https://github.com/scikit-sparse/scikit-sparse
