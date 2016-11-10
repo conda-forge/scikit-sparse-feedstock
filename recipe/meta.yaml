@@ -1,16 +1,16 @@
-{% set version = "0.3" %}
+{% set version = "0.4" %}
 
 package:
   name: scikit-sparse
   version: {{ version }}
 
 source:
-  fn: scikit-sparse--{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/s/scikit-sparse/scikit-sparse-{{ version }}.tar.gz
-  sha256: 2456be16e65bb8126ea7b9a3b175282b396d07ebeb0b4c5ac85d707bfc977008
+  fn: scikit-sparse-{{ version }}.tar.gz
+  url: https://github.com/scikit-sparse/scikit-sparse/archive/v{{ version }}.tar.gz
+  sha256: 84dac24434a830380303e1bc4e55e8adbdff1edf2c8197f64fbd564c75eea019
 
 build:
-  number: 1
+  number: 0
   skip: True  # [win]
 
 requirements:
@@ -45,3 +45,4 @@ extra:
     recipe-maintainers:
       - grlee77
       - patricksnape
+      - jor-

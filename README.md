@@ -14,23 +14,24 @@ Summary: A companion to the scipy.sparse library for sparse matrix manipulation 
 Installing scikit-sparse
 ========================
 
-Installing scikit-sparse from the conda-forge channel can be achieved by adding conda-forge to your channels with:
+Installing `scikit-sparse` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 ```
 
-Once the conda-forge channel has been enabled, scikit-sparse can be installed with:
+Once the `conda-forge` channel has been enabled, `scikit-sparse` can be installed with:
 
 ```
 conda install scikit-sparse
 ```
 
-It is possible to list all of the versions of scikit-sparse available on your platform with:
+It is possible to list all of the versions of `scikit-sparse` available on your platform with:
 
 ```
 conda search scikit-sparse --channel conda-forge
 ```
+
 
 
 About conda-forge
@@ -51,8 +52,8 @@ packages to the [conda-forge](https://anaconda.org/conda-forge)
 
 To manage the continuous integration and simplify feedstock maintenance
 [conda-smithy](http://github.com/conda-forge/conda-smithy) has been developed.
-Using the ``conda-forge.yml`` within this repository, it is possible to regenerate all of
-this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy regenerate``.
+Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
+this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
 
 Terminology
