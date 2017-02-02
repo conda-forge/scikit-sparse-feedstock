@@ -11,6 +11,18 @@ Summary: A companion to the scipy.sparse library for sparse matrix manipulation 
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/scikit-sparse-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/scikit-sparse-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/scikit-sparse-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/scikit-sparse-feedstock)
+Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/scikit-sparse/badges/version.svg)](https://anaconda.org/conda-forge/scikit-sparse)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/scikit-sparse/badges/downloads.svg)](https://anaconda.org/conda-forge/scikit-sparse)
+
 Installing scikit-sparse
 ========================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `scikit-sparse` available on your 
 ```
 conda search scikit-sparse --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/scikit-sparse-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/scikit-sparse-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/scikit-sparse-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/scikit-sparse-feedstock)
-Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/scikit-sparse/badges/version.svg)](https://anaconda.org/conda-forge/scikit-sparse)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/scikit-sparse/badges/downloads.svg)](https://anaconda.org/conda-forge/scikit-sparse)
 
 
 Updating scikit-sparse-feedstock
