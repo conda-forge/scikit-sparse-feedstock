@@ -1,4 +1,4 @@
-{% set version = "0.4" %}
+{% set version = "0.4.1" %}
 
 package:
   name: scikit-sparse
@@ -7,10 +7,10 @@ package:
 source:
   fn: scikit-sparse-{{ version }}.tar.gz
   url: https://github.com/scikit-sparse/scikit-sparse/archive/v{{ version }}.tar.gz
-  sha256: 50aa2b9a18a386f77569ad30f48b74221e1f6c878fbd41d6644a1a63ce5859eb
+  sha256: 0af547156b73c83350676474a93fd4613afbabac37a461b6b0e71a06e1a13c65
 
 build:
-  number: 1
+  number: 0
   skip: True  # [win]
 
 requirements:
