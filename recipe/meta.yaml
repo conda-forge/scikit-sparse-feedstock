@@ -1,5 +1,10 @@
 {% set version = "0.4.1" %}
 
+# Explicitly depend on and pin openblas to avoid potential issue as observed
+# previously for scikit-umfpack.
+# see:  https://github.com/conda-forge/scikit-umfpack-feedstock/issues/8
+{% set variant = "openblas" %}
+
 package:
   name: scikit-sparse
   version: {{ version }}
@@ -10,17 +15,23 @@ source:
   sha256: 0af547156b73c83350676474a93fd4613afbabac37a461b6b0e71a06e1a13c65
 
 build:
-  number: 0
   skip: True  # [win]
+  number: 200
+  features:
+    - blas_{{ variant }}
 
 requirements:
   build:
+    - blas 1.1 {{ variant }}
+    - openblas 0.2.19|0.2.19.*
     - python
     - numpy x.x
     - suitesparse
     - cython
     - setuptools
   run:
+    - blas 1.1 {{ variant }}
+    - openblas 0.2.19|0.2.19.*
     - python
     - numpy x.x
     - scipy
