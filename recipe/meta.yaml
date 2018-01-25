@@ -16,13 +16,13 @@ build:
 requirements:
   build:
     - python
-    - numpy x.x
+    - numpy 1.11.*
     - suitesparse
     - cython
     - setuptools
   run:
     - python
-    - numpy x.x
+    - numpy >=1.11
     - scipy
     - suitesparse
 
