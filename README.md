@@ -14,8 +14,8 @@ Summary: A companion to the scipy.sparse library for sparse matrix manipulation 
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/scikit-sparse-feedstock_own-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/scikit-sparse-feedstock_own-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/scikit-sparse-feedstock_own-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/scikit-sparse-feedstock_own-feedstock)
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/scikit-sparse-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/scikit-sparse-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/scikit-sparse-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/scikit-sparse-feedstock)
 Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
 
 Current release info
