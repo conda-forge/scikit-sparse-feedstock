@@ -14,14 +14,16 @@ Summary: A companion to the scipy.sparse library for sparse matrix manipulation 
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/scikit-sparse-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/scikit-sparse-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/scikit-sparse-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/scikit-sparse-feedstock)
-Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/scikit-sparse-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/scikit-sparse-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/scikit-sparse-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/scikit-sparse-feedstock)
+![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/scikit-sparse/badges/version.svg)](https://anaconda.org/conda-forge/scikit-sparse)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/scikit-sparse/badges/downloads.svg)](https://anaconda.org/conda-forge/scikit-sparse)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-scikit--sparse-green.svg)](https://anaconda.org/conda-forge/scikit-sparse) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/scikit-sparse.svg)](https://anaconda.org/conda-forge/scikit-sparse) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/scikit-sparse.svg)](https://anaconda.org/conda-forge/scikit-sparse) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/scikit-sparse.svg)](https://anaconda.org/conda-forge/scikit-sparse) |
 
 Installing scikit-sparse
 ========================
