@@ -7,7 +7,7 @@ package:
 source:
   fn: scikit-sparse-{{ version }}.tar.gz
   url: https://github.com/scikit-sparse/scikit-sparse/archive/v{{ version }}.tar.gz
-  sha256: fe41ad91c02372664f0f49b50191101a55495dc9f01f55fe5594fd6e363c36b1
+  sha256: 1900f729ea7ed1dada7ae0aae25976987d5d3ff24112b98156e2bd6d51fe14d4
 
 build:
   number: 0
