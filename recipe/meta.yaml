@@ -41,6 +41,7 @@ test:
 about:
   home: https://github.com/scikit-sparse/scikit-sparse
   license: BSD 2-clause
+  license_file: LICENSE.txt
   summary: A companion to the scipy.sparse library for sparse matrix manipulation in Python.
 
 extra:
