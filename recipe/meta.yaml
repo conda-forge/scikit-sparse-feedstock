@@ -1,4 +1,4 @@
-{% set version = "0.4.4" %}
+{% set version = "0.4.5" %}
 
 package:
   name: scikit-sparse
@@ -7,11 +7,11 @@ package:
 source:
   fn: scikit-sparse-{{ version }}.tar.gz
   url: https://github.com/scikit-sparse/scikit-sparse/archive/v{{ version }}.tar.gz
-  sha256: 1900f729ea7ed1dada7ae0aae25976987d5d3ff24112b98156e2bd6d51fe14d4
+  sha256: f1efc1855bfc8f0a4160c625f0245df2c3a8ffe4ead0f04a40c43d59033a799e
 
 build:
-  number: 1004
-  skip: True  # [win]
+  number: 0
+  skip: true  # [win]
 
 requirements:
   build:
@@ -45,7 +45,7 @@ about:
   summary: A companion to the scipy.sparse library for sparse matrix manipulation in Python.
 
 extra:
-    recipe-maintainers:
-      - grlee77
-      - patricksnape
-      - jor-
+  recipe-maintainers:
+    - grlee77
+    - patricksnape
+    - jor-
