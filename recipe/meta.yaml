@@ -30,13 +30,13 @@ requirements:
 
 test:
   requires:
-    - nose
+    - pytest
     - setuptools
   imports:
     - sksparse
     - sksparse.cholmod
   commands:
-    - OPENBLAS_NUM_THREADS=1 nosetests -sv sksparse
+    - OPENBLAS_NUM_THREADS=1 pytest --pyargs sksparse
 
 about:
   home: https://github.com/scikit-sparse/scikit-sparse
