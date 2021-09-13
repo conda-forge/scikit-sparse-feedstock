@@ -1,4 +1,4 @@
-{% set version = "0.4.5" %}
+{% set version = "0.4.6" %}
 
 package:
   name: scikit-sparse
@@ -7,7 +7,7 @@ package:
 source:
   fn: scikit-sparse-{{ version }}.tar.gz
   url: https://github.com/scikit-sparse/scikit-sparse/archive/v{{ version }}.tar.gz
-  sha256: f1efc1855bfc8f0a4160c625f0245df2c3a8ffe4ead0f04a40c43d59033a799e
+  sha256: 72c436620985cfd0911a6cdb9e691674dafe98dc8bdf4e4a8178d96459554974
 
 build:
   number: 0
@@ -30,13 +30,13 @@ requirements:
 
 test:
   requires:
-    - nose
+    - pytest
     - setuptools
   imports:
     - sksparse
     - sksparse.cholmod
   commands:
-    - OPENBLAS_NUM_THREADS=1 nosetests -sv sksparse
+    - OPENBLAS_NUM_THREADS=1 pytest --pyargs sksparse
 
 about:
   home: https://github.com/scikit-sparse/scikit-sparse
@@ -49,3 +49,4 @@ extra:
     - grlee77
     - patricksnape
     - jor-
+    - jellis18
