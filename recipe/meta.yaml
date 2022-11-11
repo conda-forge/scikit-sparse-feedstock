@@ -43,7 +43,8 @@ test:
     - sksparse
     - sksparse.cholmod
   commands:
-    - OPENBLAS_NUM_THREADS=1 pytest --pyargs sksparse
+    - OPENBLAS_NUM_THREADS=1 pytest --pyargs sksparse  # [unix]
+    - pytest --pyargs sksparse  # [win]
 
 about:
   home: https://github.com/scikit-sparse/scikit-sparse
