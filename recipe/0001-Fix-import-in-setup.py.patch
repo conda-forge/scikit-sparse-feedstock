@@ -1,0 +1,27 @@
+From 2aa69dff8f7b4053e52dc4bd455b0bbfa9b5b3a7 Mon Sep 17 00:00:00 2001
+From: Eric Prestat <eric.prestat@gmail.com>
+Date: Fri, 11 Nov 2022 22:14:18 +0000
+Subject: [PATCH] Fix import in setup.py to avoid
+ distutils.errors.DistutilsSetupError
+
+---
+ setup.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/setup.py b/setup.py
+index 18b2ef4..e9f74fb 100644
+--- a/setup.py
++++ b/setup.py
+@@ -24,8 +24,8 @@ import os
+ import sys
+ 
+ import numpy as np
+-from Cython.Build import cythonize
+ from setuptools import Extension, find_packages, setup
++from Cython.Build import cythonize
+ 
+ DISTNAME = "scikit-sparse"
+ DESCRIPTION = "Scikit sparse matrix package"
+-- 
+2.30.2.windows.1
+
