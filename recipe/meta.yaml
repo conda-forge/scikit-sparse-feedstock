@@ -8,6 +8,9 @@ source:
   fn: scikit-sparse-{{ version }}.tar.gz
   url: https://github.com/scikit-sparse/scikit-sparse/archive/v{{ version }}.tar.gz
   sha256: af850a0efc06576c6aa2d8a801316e9a2ae47609e48534b17352aac8b8deeba7
+  patches:
+    # https://github.com/scikit-sparse/scikit-sparse/pull/84
+    - 0001-Fix-import-in-setup.py.patch
 
 build:
   number: 0
@@ -15,6 +18,10 @@ build:
 
 requirements:
   build:
+    - python                                 # [build_platform != target_platform]
+    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
+    - cython                                 # [build_platform != target_platform]
+    - numpy                                  # [build_platform != target_platform]
     - {{ compiler('c') }}
   host:
     - python
