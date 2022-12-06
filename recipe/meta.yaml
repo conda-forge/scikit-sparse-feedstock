@@ -13,8 +13,7 @@ source:
     - 0001-Fix-import-in-setup.py.patch
 
 build:
-  number: 0
-  skip: true  # [win]
+  number: 1
 
 requirements:
   build:
@@ -25,6 +24,7 @@ requirements:
     - {{ compiler('c') }}
   host:
     - python
+    - pip
     - numpy
     - suitesparse
     - cython
@@ -43,7 +43,8 @@ test:
     - sksparse
     - sksparse.cholmod
   commands:
-    - OPENBLAS_NUM_THREADS=1 pytest --pyargs sksparse
+    - OPENBLAS_NUM_THREADS=1 pytest --pyargs sksparse  # [unix]
+    - pytest --pyargs sksparse  # [win]
 
 about:
   home: https://github.com/scikit-sparse/scikit-sparse
