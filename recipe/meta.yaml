@@ -13,7 +13,7 @@ source:
     - 0001-Fix-import-in-setup.py.patch
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -22,6 +22,7 @@ requirements:
     - cython                                 # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
   host:
     - python
     - pip
