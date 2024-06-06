@@ -1,6 +1,5 @@
 #!/bin/bash
 
-export LDFLAGS="${LDFLAGS} -L${PREFIX}/lib -Wl,-rpath,${PREFIX}/lib"
-export CFLAGS="${CFLAGS} -I${PREFIX}/include"
+export CFLAGS="${CFLAGS} -I${PREFIX}/include/suitesparse"
 
-$PYTHON setup.py install --single-version-externally-managed --record record.txt
+$PYTHON -m pip install . --no-deps -vv
