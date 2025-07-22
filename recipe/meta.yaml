@@ -7,7 +7,7 @@ package:
 source:
   fn: scikit-sparse-{{ version }}.tar.gz
   url: https://github.com/scikit-sparse/scikit-sparse/archive/v{{ version }}.tar.gz
-  sha256: 88183df0aca206d22cecec479a96b656785ab8a8681e0429a36cc7d6f464425f
+  sha256: be75af5e8a9ff4bb947c2de02936d26b7727b1f92aa74fbd6cdb57414946e82f
   patches:
     # https://github.com/scikit-sparse/scikit-sparse/pull/84
     - 0001-Fix-import-in-setup.py.patch
