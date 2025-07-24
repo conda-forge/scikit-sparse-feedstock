@@ -1,4 +1,4 @@
-{% set version = "0.4.14" %}
+{% set version = "0.4.16" %}
 
 package:
   name: scikit-sparse
@@ -7,13 +7,13 @@ package:
 source:
   fn: scikit-sparse-{{ version }}.tar.gz
   url: https://github.com/scikit-sparse/scikit-sparse/archive/v{{ version }}.tar.gz
-  sha256: 44c59c2b6a4e4e51bcc5715a90e5d1e74721483196d724cdb68cbc87ebd885e5
+  sha256: be75af5e8a9ff4bb947c2de02936d26b7727b1f92aa74fbd6cdb57414946e82f
   patches:
     # https://github.com/scikit-sparse/scikit-sparse/pull/84
     - 0001-Fix-import-in-setup.py.patch
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
@@ -59,3 +59,4 @@ extra:
     - patricksnape
     - jor-
     - jellis18
+    - AaronDJohnson
