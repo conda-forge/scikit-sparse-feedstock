@@ -32,7 +32,6 @@ requirements:
     - setuptools
   run:
     - python
-    - {{ pin_compatible('numpy') }}
     - scipy
     - suitesparse
 
