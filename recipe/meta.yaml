@@ -11,6 +11,12 @@ source:
 
 build:
   number: 0
+  script: |
+    # Make sure that the compiler can find the SuiteSparse headers and libraries
+    export CFLAGS="${CFLAGS} -I$PREFIX/include -I$PREFIX/include/suitesparse"
+    export LDFLAGS="${LDFLAGS} -L$PREFIX/lib"
+    # Build and install the package
+    {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   build:
