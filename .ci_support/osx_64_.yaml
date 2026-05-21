@@ -15,19 +15,10 @@ channel_sources:
 channel_targets:
 - conda-forge main
 macos_machine:
-- arm64-apple-darwin20.0.0
+- x86_64-apple-darwin13.4.0
 numpy:
 - '2'
-pin_run_as_build:
-  python:
-    min_pin: x.x
-    max_pin: x.x
-python:
-- 3.13.* *_cp313
 suitesparse:
 - '7'
 target_platform:
-- osx-arm64
-zip_keys:
-- - python
-  - channel_sources
+- osx-64
