@@ -24,14 +24,14 @@ requirements:
     - {{ compiler('c') }}
     - {{ stdlib('c') }}
   host:
-    - python >=3.10
+    - python
     - pip
     - numpy
     - suitesparse
     - cython
     - setuptools
   run:
-    - python >=3.10
+    - python
     - scipy >=1.14
     - packaging
     - suitesparse
