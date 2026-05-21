@@ -1,4 +1,4 @@
-{% set version = "0.4.16" %}
+{% set version = "0.5.0" %}
 
 package:
   name: scikit-sparse
@@ -7,13 +7,13 @@ package:
 source:
   fn: scikit-sparse-{{ version }}.tar.gz
   url: https://github.com/scikit-sparse/scikit-sparse/archive/v{{ version }}.tar.gz
-  sha256: be75af5e8a9ff4bb947c2de02936d26b7727b1f92aa74fbd6cdb57414946e82f
+  sha256: 2f98b2c7d089a65d3eaa7533393966b9e695a429509cf0c4f5d9bca05a3f8687
   patches:
     # https://github.com/scikit-sparse/scikit-sparse/pull/84
     - 0001-Fix-import-in-setup.py.patch
 
 build:
-  number: 2
+  number: 0
 
 requirements:
   build:
@@ -24,15 +24,16 @@ requirements:
     - {{ compiler('c') }}
     - {{ stdlib('c') }}
   host:
-    - python
+    - python >=3.10
     - pip
     - numpy
     - suitesparse
     - cython
     - setuptools
   run:
-    - python
-    - scipy
+    - python >=3.10
+    - scipy >=1.14
+    - packaging
     - suitesparse
 
 test:
@@ -41,7 +42,6 @@ test:
     - setuptools
   imports:
     - sksparse
-    - sksparse.cholmod
   commands:
     - OPENBLAS_NUM_THREADS=1 pytest --pyargs sksparse  # [unix]
     - pytest --pyargs sksparse  # [win]
@@ -59,3 +59,4 @@ extra:
     - jor-
     - jellis18
     - AaronDJohnson
+    - broesler
