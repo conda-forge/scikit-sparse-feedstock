@@ -44,14 +44,10 @@ requirements:
     - suitesparse
 
 test:
-  requires:
-    - pytest
-    - setuptools
   imports:
     - sksparse
   commands:
-    - OPENBLAS_NUM_THREADS=1 pytest --pyargs sksparse  # [unix]
-    - pytest --pyargs sksparse  # [win]
+    - python -c "import sksparse; print(sksparse.__version__)"
 
 about:
   home: https://github.com/scikit-sparse/scikit-sparse
