@@ -17,14 +17,14 @@ requirements:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - cython                                 # [build_platform != target_platform]
-    - numpy                                  # [build_platform != target_platform]
+    - numpy >=2.0                            # [build_platform != target_platform]
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - {{ stdlib('c') }}
   host:
     - python
     - pip
-    - numpy
+    - numpy >=2.0
     - suitesparse
     - cython
     - setuptools
@@ -35,10 +35,23 @@ requirements:
     - suitesparse
 
 test:
+  requires:
+    - pytest
+    - setuptools
   imports:
     - sksparse
+    - sksparse.amd
+    - sksparse.btf
+    - sksparse.camd
+    - sksparse.ccolamd
+    - sksparse.cholmod
+    - sksparse.colamd
+    - sksparse.klu
+    - sksparse.spqr
+    - sksparse.umfpack
   commands:
     - python -c "import sksparse; print(sksparse.__version__)"
+    - pytest --pyargs sksparse
 
 about:
   home: https://github.com/scikit-sparse/scikit-sparse
