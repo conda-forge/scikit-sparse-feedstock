@@ -1,7 +1,7 @@
 MACOSX_DEPLOYMENT_TARGET:
-- '10.13'
+- '11.0'
 MACOSX_SDK_VERSION:
-- '10.13'
+- '11.0'
 c_compiler:
 - clang
 c_compiler_version:
@@ -9,11 +9,15 @@ c_compiler_version:
 c_stdlib:
 - macosx_deployment_target
 c_stdlib_version:
-- '10.13'
+- '11.0'
 channel_sources:
-- conda-forge,conda-forge/label/python_rc
+- conda-forge
 channel_targets:
 - conda-forge main
+cxx_compiler:
+- clangxx
+cxx_compiler_version:
+- '19'
 macos_machine:
 - x86_64-apple-darwin13.4.0
 numpy:
@@ -29,5 +33,5 @@ suitesparse:
 target_platform:
 - osx-64
 zip_keys:
-- - python
-  - channel_sources
+- - c_compiler_version
+  - cxx_compiler_version

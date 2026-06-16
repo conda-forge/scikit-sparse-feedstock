@@ -11,9 +11,13 @@ c_stdlib:
 c_stdlib_version:
 - '11.0'
 channel_sources:
-- conda-forge,conda-forge/label/python_rc
+- conda-forge
 channel_targets:
 - conda-forge main
+cxx_compiler:
+- clangxx
+cxx_compiler_version:
+- '19'
 macos_machine:
 - arm64-apple-darwin20.0.0
 numpy:
@@ -29,5 +33,5 @@ suitesparse:
 target_platform:
 - osx-arm64
 zip_keys:
-- - python
-  - channel_sources
+- - c_compiler_version
+  - cxx_compiler_version
