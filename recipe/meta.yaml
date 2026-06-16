@@ -24,7 +24,7 @@ requirements:
   host:
     - python
     - pip
-    - numpy >=2.0
+    - numpy
     - suitesparse
     - cython
     - setuptools
