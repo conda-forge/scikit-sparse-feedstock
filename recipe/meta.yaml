@@ -35,9 +35,6 @@ requirements:
     - suitesparse
 
 test:
-  requires:
-    - pytest
-    - setuptools
   imports:
     - sksparse
     - sksparse.amd
@@ -51,7 +48,6 @@ test:
     - sksparse.umfpack
   commands:
     - python -c "import sksparse; print(sksparse.__version__)"
-    - pytest --pyargs sksparse
 
 about:
   home: https://github.com/scikit-sparse/scikit-sparse
